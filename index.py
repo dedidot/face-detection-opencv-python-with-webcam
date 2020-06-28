@@ -37,7 +37,6 @@ for name in os.listdir(KNOWN_FACES_DIR):
 
 print("Processing unknown faces....")
 
-#for filename in os.listdir(UNKNOWN_FACES_DIR):
 while True:
     ret, image = video.read()
     # Grab face location
@@ -81,4 +80,3 @@ while True:
     cv2.imshow(filename, image)
     if cv2.waitKey(1) & 0xFF == ord("q"):
         break
-    #cv2.destroyWindow(filename)
